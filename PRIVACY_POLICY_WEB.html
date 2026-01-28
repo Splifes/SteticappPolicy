@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidad — Steticapp</title>
+  <meta name="description" content="Política de Privacidad de la aplicación Steticapp. Información sobre recopilación, uso y protección de datos personales.">
+  <style>
+    :root {
+      --bg: #fafafa;
+      --text: #1a1a1a;
+      --text-muted: #555;
+      --accent: #5c6bc0;
+      --border: #e0e0e0;
+      --card-bg: #fff;
+      --warning-bg: #fff8e1;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+      margin: 0;
+      padding: 1rem;
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    h1 {
+      font-size: 1.75rem;
+      margin-top: 0;
+      color: var(--accent);
+    }
+    h2 {
+      font-size: 1.25rem;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.25rem;
+      border-bottom: 1px solid var(--border);
+    }
+    h3 { font-size: 1.05rem; margin-top: 1.5rem; }
+    p { margin: 0.5rem 0 1rem; }
+    ul { margin: 0.5rem 0 1rem; padding-left: 1.5rem; }
+    li { margin-bottom: 0.35rem; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      margin: 1rem 0;
+      background: var(--card-bg);
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+    th, td {
+      padding: 0.6rem 0.75rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    th {
+      background: var(--accent);
+      color: #fff;
+      font-weight: 600;
+    }
+    tr:last-child td { border-bottom: none; }
+    tr:nth-child(even) { background: #f9f9f9; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .meta { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem; }
+    .note, .warning-box {
+      padding: 0.75rem 1rem;
+      border-radius: 6px;
+      margin: 1rem 0;
+      font-size: 0.9rem;
+    }
+    .note { background: #e3f2fd; border-left: 4px solid var(--accent); }
+    .warning-box { background: var(--warning-bg); border-left: 4px solid #ff9800; }
+    .warning-box h3 { margin-top: 0; }
+    hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+    footer { font-size: 0.85rem; color: var(--text-muted); margin-top: 2rem; }
+    @media (max-width: 600px) {
+      table, th, td { display: block; }
+      th { display: none; }
+      td { padding: 0.35rem 0; border-bottom: 1px solid var(--border); }
+      td::before { content: attr(data-label); font-weight: 600; display: inline-block; min-width: 120px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Política de Privacidad — Steticapp</h1>
+    <p class="meta"><strong>Última actualización:</strong> 27 de enero de 2025</p>
+  </header>
+
+  <main>
+    <section aria-labelledby="sec1">
+      <h2 id="sec1">1. Quiénes somos</h2>
+      <p><strong>Steticapp</strong> («la aplicación», «nosotros», «nuestro») es una aplicación móvil de gestión para profesionales de estética, centros de belleza y clínicas estéticas. Permite gestionar pacientes, turnos, tratamientos, equipos y estadísticas, con soporte offline y sincronización en tiempo real.</p>
+      <ul>
+        <li><strong>Nombre de la aplicación:</strong> Steticapp</li>
+        <li><strong>Desarrollador / responsable del tratamiento:</strong> [Nombre o razón social del desarrollador — reemplazar]</li>
+        <li><strong>Contacto:</strong> [email de privacidad/soporte — reemplazar]</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <section aria-labelledby="sec2">
+      <h2 id="sec2">2. Alcance</h2>
+      <p>Esta política describe qué datos personales recopilamos, para qué los usamos, dónde se almacenan, con quién se comparten (si aplica), cuánto tiempo se conservan y qué derechos tiene el usuario. Es aplicable a quienes utilizan la aplicación Steticapp en Android e iOS.</p>
+    </section>
+
+    <hr>
+
+    <section aria-labelledby="sec3">
+      <h2 id="sec3">3. Datos que recopilamos</h2>
+      <p>Recopilamos los datos que se detallan a continuación, agrupados por categoría y según su origen.</p>
+
+      <h3>3.1 Datos que usted nos proporciona</h3>
+      <table role="grid">
+        <thead>
+          <tr>
+            <th scope="col">Dato</th>
+            <th scope="col">Finalidad</th>
+            <th scope="col">Dónde se almacena</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Dato">Email</td>
+            <td data-label="Finalidad">Cuenta de usuario, autenticación y recuperación de sesión</td>
+            <td data-label="Dónde se almacena">Dispositivo (SharedPreferences), Firebase Authentication, Firebase Realtime Database</td>
+          </tr>
+          <tr>
+            <td data-label="Dato">Contraseña</td>
+            <td data-label="Finalidad">Autenticación (almacenada de forma local para «recordar sesión»)</td>
+            <td data-label="Dónde se almacena">Dispositivo (SharedPreferences)</td>
+          </tr>
+          <tr>
+            <td data-label="Dato">Nombre y apellido</td>
+            <td data-label="Finalidad">Identificación del usuario y del perfil en la estética</td>
+            <td data-label="Dónde se almacena">Dispositivo, Firebase Realtime Database</td>
+          </tr>
+          <tr>
+            <td data-label="Dato">Datos de pacientes (nombre, apellido, teléfono, email, fecha de nacimiento, género, observaciones, redes sociales, historial de tratamientos sugeridos)</td>
+            <td data-label="Finalidad">Gestión de fichas de pacientes y turnos en la estética</td>
+            <td data-label="Dónde se almacena">Firebase Realtime Database (por estética), dispositivos con la app (caché/offline)</td>
+          </tr>
+          <tr>
+            <td data-label="Dato">Datos de turnos (paciente asociado, fecha/hora, operador, método de pago, descuentos, observaciones, etc.)</td>
+            <td data-label="Finalidad">Gestión de agenda y estadísticas</td>
+            <td data-label="Dónde se almacena">Firebase Realtime Database, cola offline y logs locales</td>
+          </tr>
+          <tr>
+            <td data-label="Dato">Datos de la estética (nombre, tipo, descripción, códigos de invitación, miembros y roles)</td>
+            <td data-label="Finalidad">Funcionamiento multi‑estética y equipos</td>
+            <td data-label="Dónde se almacena">Firebase Realtime Database, dispositivo (estética actual, preferencias)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>3.2 Datos que genera o recopila el sistema</h3>
+      <table role="grid">
+        <thead>
+          <tr>
+            <th scope="col">Dato</th>
+            <th scope="col">Finalidad</th>
+            <th scope="col">Dónde se almacena</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Dato">Identificador único de usuario (UID)</td>
+            <td data-label="Finalidad">Vinculación de datos a la cuenta en Firebase Auth</td>
+            <td data-label="Dónde se almacena">Firebase, dispositivo</td>
+          </tr>
+          <tr>
+            <td data-label="Dato">Identificador de estética actual</td>
+            <td data-label="Finalidad">Saber en qué estética trabaja el usuario en la sesión</td>
+            <td data-label="Dónde se almacena">Dispositivo (SharedPreferences)</td>
+          </tr>
+          <tr>
+            <td data-label="Dato">Acciones pendientes de sincronización</td>
+            <td data-label="Finalidad">Funcionamiento offline y sincronización posterior</td>
+            <td data-label="Dónde se almacena">Dispositivo (SharedPreferences, backups locales)</td>
+          </tr>
+          <tr>
+            <td data-label="Dato">Logs de acciones (tipo, ID, nombre de entidad, ID/usuario, descripción, metadatos)</td>
+            <td data-label="Finalidad">Diagnóstico y trazabilidad de operaciones</td>
+            <td data-label="Dónde se almacena">Solo en el dispositivo (carpeta SteticappLogs / directorio de documentos de la app)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>3.3 Datos de uso y técnicos (terceros)</h3>
+      <table role="grid">
+        <thead>
+          <tr>
+            <th scope="col">Dato / Servicio</th>
+            <th scope="col">Finalidad</th>
+            <th scope="col">Proveedor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Dato / Servicio">Firebase Authentication</td>
+            <td data-label="Finalidad">Crear y mantener la sesión (email/contraseña)</td>
+            <td data-label="Proveedor">Google (Firebase)</td>
+          </tr>
+          <tr>
+            <td data-label="Dato / Servicio">Firebase Realtime Database</td>
+            <td data-label="Finalidad">Almacenar usuarios, estéticas, pacientes, turnos, tratamientos y códigos de invitación</td>
+            <td data-label="Proveedor">Google (Firebase)</td>
+          </tr>
+          <tr>
+            <td data-label="Dato / Servicio">Conexión a Internet</td>
+            <td data-label="Finalidad">Verificar conectividad para modo offline/online</td>
+            <td data-label="Proveedor">Solo uso local (connectivity_plus); no se envía a servidor propio</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="note">
+        <strong>Nota:</strong> En el código actual no están integrados Firebase Analytics, Firebase Crashlytics ni Firebase Cloud Messaging. Si en el futuro se añaden, esta política deberá actualizarse y, en su caso, recabarse consentimiento según la normativa aplicable.
+      </div>
+    </section>
+
+    <hr>
+
+    <section aria-labelledby="sec4">
+      <h2 id="sec4">4. Cómo usamos sus datos</h2>
+      <p>Utilizamos los datos para:</p>
+      <ul>
+        <li><strong>Prestar el servicio:</strong> autenticación, gestión de estéticas, pacientes, turnos y tratamientos.</li>
+        <li><strong>Sincronización y offline:</strong> guardar cambios en el dispositivo y sincronizarlos con Firebase cuando haya conexión.</li>
+        <li><strong>Seguridad y operación:</strong> reglas de acceso en Firebase (por usuario y estética), y logs locales para soporte y diagnóstico.</li>
+        <li><strong>Cumplimiento legal:</strong> responder a requerimientos válidos de autoridades cuando la ley lo exija.</li>
+      </ul>
+      <p>No usamos los datos para publicidad ni para crear perfiles para fines de marketing.</p>
+    </section>
+
+    <hr>
+
+    <section aria-labelledby="sec5">
+      <h2 id="sec5">5. Base legal y consentimiento</h2>
+      <ul>
+        <li><strong>Ejecución del contrato / servicio:</strong> el tratamiento de email, nombre, contraseña (y datos de pacientes/turnos/estéticas) es necesario para poder ofrecer la aplicación y las funciones descritas.</li>
+        <li><strong>Consentimiento:</strong> al registrarse y usar la app, el usuario acepta esta política y el tratamiento descrito.</li>
+        <li><strong>Intereses legítimos:</strong> logs locales y sincronización para estabilidad, seguridad y soporte técnico (sin compartir esos logs con terceros).</li>
+      </ul>
+      <p>Si su ordenamiento aplica consentimiento explícito para datos sensibles (p. ej. salud), las observaciones o tratamientos relacionados con pacientes podrían requerir base adicional; en ese caso, el responsable lo indicará en la app o en una actualización de esta política.</p>
+    </section>
+
+    <hr>
+
+    <section aria-labelledby="sec6">
+      <h2 id="sec6">6. Compartición con terceros</h2>
+      <p>No vendemos ni alquilamos datos personales. Compartimos datos solo en estos casos:</p>
+      <table role="grid">
+        <thead>
+          <tr>
+            <th scope="col">Tipo de dato</th>
+            <th scope="col">Con quién</th>
+            <th scope="col">Finalidad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Tipo de dato">Datos de cuenta y de la app (usuarios, estéticas, pacientes, turnos)</td>
+            <td data-label="Con quién">Google Firebase (Auth + Realtime Database)</td>
+            <td data-label="Finalidad">Autenticación y almacenamiento en la nube</td>
+          </tr>
+          <tr>
+            <td data-label="Tipo de dato">Cualquier dato</td>
+            <td data-label="Con quién">Autoridades competentes</td>
+            <td data-label="Finalidad">Cuando lo exija la ley o una orden judicial válida</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Firebase forma parte de Google LLC y está sujeto a la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad de Google</a>. Los datos se almacenan en los proyectos de Firebase que usa la aplicación (proyecto <code>steticapp-39adf</code>).</p>
+      <p><strong>Enlaces externos:</strong> la app puede abrir enlaces a WhatsApp, Instagram o sitios web (p. ej. wa.me, instagram.com). Esas plataformas tienen sus propias políticas de privacidad; nosotros no controlamos los datos que el usuario comparta con ellas.</p>
+    </section>
+
+    <hr>
+
+    <section aria-labelledby="sec7">
+      <h2 id="sec7">7. Almacenamiento y transferencias internacionales</h2>
+      <ul>
+        <li><strong>Firebase:</strong> Google puede procesar y almacenar datos en servidores fuera del país del usuario (p. ej. EE. UU. o regiones de Google Cloud). Google ofrece garantías (cláusulas contractuales tipo y, cuando aplica, certificaciones) según la normativa de protección de datos.</li>
+        <li><strong>Dispositivo:</strong> los datos en SharedPreferences, cola offline y logs permanecen en el dispositivo del usuario y no se envían a nuestros propios servidores.</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <section aria-labelledby="sec8">
+      <h2 id="sec8">8. Seguridad</h2>
+      <ul>
+        <li>Usamos <strong>Firebase Authentication</strong> (email/contraseña) y <strong>reglas de seguridad</strong> en Realtime Database para limitar el acceso por usuario y estética.</li>
+        <li>La comunicación con Firebase se realiza por canales cifrados (HTTPS/TLS).</li>
+        <li>Los datos en el dispositivo se guardan en almacenamiento local de la app (SharedPreferences, directorios de la aplicación).</li>
+        <li><strong>Recomendación importante:</strong> la app puede guardar temporalmente email y contraseña en el dispositivo para «recordar sesión». Debe usar contraseñas fuertes y no compartir el dispositivo con terceros.</li>
+      </ul>
+      <p>Ningún sistema es infalible; no podemos garantizar una seguridad absoluta frente a accesos no autorizados o fallos técnicos.</p>
+    </section>
+
+    <hr>
+
+    <section aria-labelledby="sec9">
+      <h2 id="sec9">9. Retención y eliminación</h2>
+      <ul>
+        <li><strong>Cuenta y datos en Firebase:</strong> se conservan mientras la cuenta exista y el usuario use el servicio. Si solicita la <strong>eliminación de la cuenta</strong>, procederemos a borrar o anonimizar los datos personales que nos incumban en un plazo razonable (por ejemplo, 30 días), salvo retención legal.</li>
+        <li><strong>Datos en el dispositivo:</strong> al desinstalar la app, SharedPreferences, cola offline y logs locales se eliminan con la aplicación.</li>
+        <li><strong>Firebase:</strong> la eliminación de datos en Firebase (Auth y Realtime Database) debe hacerse desde la cuenta del desarrollador o mediante procesos que el responsable defina (p. ej. solicitud por email).</li>
+        <li><strong>Logs locales:</strong> se rotan y se limita su número/tamaño en el código; no se envían a ningún servidor.</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <section aria-labelledby="sec10">
+      <h2 id="sec10">10. Derechos del usuario</h2>
+      <p>Según la normativa aplicable (GDPR, CCPA, LGPD, etc.), usted puede tener derecho a:</p>
+      <ul>
+        <li><strong>Acceso:</strong> saber qué datos tenemos sobre usted.</li>
+        <li><strong>Rectificación:</strong> corregir datos inexactos o incompletos.</li>
+        <li><strong>Supresión:</strong> pedir la eliminación de sus datos personales.</li>
+        <li><strong>Limitación:</strong> en ciertos casos, limitar el tratamiento.</li>
+        <li><strong>Portabilidad:</strong> recibir sus datos en formato estructurado de uso común.</li>
+        <li><strong>Oposición:</strong> oponerse a determinados tratamientos.</li>
+        <li><strong>Retirar el consentimiento:</strong> cuando el tratamiento se base en el consentimiento.</li>
+      </ul>
+      <p>Para ejercer estos derechos, escriba a: <strong>[email de privacidad/soporte — reemplazar]</strong>.</p>
+      <p>Si considera que el tratamiento vulnera la normativa, puede presentar una reclamación ante la autoridad de protección de datos correspondiente.</p>
+    </section>
+
+    <hr>
+
+    <section aria-labelledby="sec11">
+      <h2 id="sec11">11. Menores y «Designed for Families»</h2>
+      <p>Steticapp <strong>no</strong> está dirigida a menores de 13 años ni está diseñada como app para familias («Designed for Families»). Es una herramienta profesional para negocios (estéticas y centros de belleza). No recopilamos intencionadamente datos de menores de 13 años. Si se detectara que se han obtenido datos de un menor sin el consentimiento parental exigido, se adoptarían medidas para eliminar esa información.</p>
+    </section>
+
+    <hr>
+
+    <section aria-labelledby="sec12">
+      <h2 id="sec12">12. Contacto</h2>
+      <p>Para preguntas sobre privacidad, ejercer derechos o notificar incidencias:</p>
+      <ul>
+        <li><strong>Email:</strong> [email de privacidad/soporte — reemplazar]</li>
+        <li><strong>Asunto sugerido:</strong> «Privacidad – Steticapp»</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <section aria-labelledby="sec13">
+      <h2 id="sec13">13. Cambios a esta política</h2>
+      <p>Podemos actualizar esta política para reflejar cambios en la app, en la ley o en nuestras prácticas. Los cambios relevantes se comunicarán mediante una nueva versión en la app o en la URL donde se publique esta política, indicando la <strong>última fecha de actualización</strong> al inicio del documento. El uso continuado de la app tras la publicación de cambios implica la aceptación de la política actualizada, salvo cuando la ley exija un consentimiento explícito para determinados tratamientos.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p><em>Documento generado en el marco de una auditoría de cumplimiento para Google Play (User Data Policy / Data Safety).</em></p>
+  </footer>
+</body>
+</html>
