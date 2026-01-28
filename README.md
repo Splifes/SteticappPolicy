@@ -1,0 +1,2 @@
+# SteticappPolicy
+Policies from Steticapp
